@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+import os
+import sys
+
+dirs = sys.argv[1:]
+for dir in dirs:
+    os.mkdir(dir)

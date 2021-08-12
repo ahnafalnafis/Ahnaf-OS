@@ -1,1 +1,1 @@
-ENV="/bin"
+ENV="/bin;/bin/core_utils"
