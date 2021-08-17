@@ -1,15 +1,36 @@
 #! /usr/bin/env python
+import time
+import datetime
 import os
 import sys
-
+from colorama import *
+init(convert=True)
 
 args = sys.argv[1:]
 
+items = list()
 
 if len(args) == 0:
     for item in os.listdir(os.getcwd()):
-        print(item)
+        get_time = os.path.getatime(item)
+        print_time = time.strftime('%b %d %H:%M', time.localtime(get_time))
+        if os.path.isdir(item):
+            items.append(Fore.RESET + print_time + " " +
+                         Fore.LIGHTBLUE_EX + item + Fore.RESET + "/")
+        else:
+            items.append(Fore.RESET + print_time + " " + item)
+
 elif len(args) > 0:
     for dir in args:
         for item in os.listdir(dir):
-            print(item)
+            get_time = os.path.getatime(item)
+            print_time = time.strftime(
+                '%Y-%m-%d %H:%M', time.localtime(get_time))
+            if os.path.isdir(item):
+                items.append(Fore.RESET + print_time + " " +
+                             Fore.LIGHTBLUE_EX + item + Fore.RESET + "/")
+            else:
+                items.append(Fore.RESET + print_time + " " + item)
+
+for item in items:
+    print(item)

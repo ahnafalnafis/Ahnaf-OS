@@ -17,6 +17,12 @@ def read(file):
     return content
 
 
+def write(file, content):
+    handler = open(file, 'w')
+    handler.write(content)
+    handler.close()
+
+
 def verify(username, password):
     """To verify the username and password"""
     dotenv.load_dotenv("etc/passwd")

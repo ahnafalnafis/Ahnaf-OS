@@ -1,0 +1,64 @@
+#! /usr/bin/env python
+from colorama import *
+init(convert=True)
+
+fetch = f"""
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssooooooosssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssooooooooossssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssooooooooooossssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssoooooo oooooossssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssoooooo   oooooosssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssoooooo     oooooossssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssoooooo       oooooosssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssoooooo         oooooosssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssoooooo           oooooosssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssoooooo             oooooossssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssoooooo               oooooosssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssoooooOOOOOOOOOOOOOOOOOOoooooossssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssoooooOOOOOOOOOOOOOOOOOOOOoooooossssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssoooooo                     oooooosssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssoooooo                       oooooossssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssoooooo                         oooooosssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssoooooo                           oooooosssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssoooooo                             oooooossssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssoooooo                               oooooosssssssssssssssssssssssssss
+sssssssssssssssssssssssssssoooooo                                 oooooosssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+""".replace("s", Fore.RED + "s").replace("o", Fore.YELLOW + "o").replace("O", Fore.YELLOW + "O").replace(" ", Fore.RED + " ")
+# print(Fore.LIGHTWHITE_EX + fetch)
+# fetch = f"""
+
+# """
+# print(fetch)
+
+"""
+            .-/+oossssoo+\-.             
+        ´:+ssssssssssssssssss+:`         
+      -+ssssssssssssssssssyyssss+-       
+    .osssssssssssssssssssssssssssso.     
+   /ssssssssssssssssssssssssssssssss\    
+  +ssssssssshmydMMMMMMMNddddyssssssss+   
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss\  
+.ssssssssdMMMNhsssssssssshNMMMdssssssss. 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+ 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+ 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss. 
+ \sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   \ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-\+oossssoo+/-.
+"""
+
+print(fetch, end="\r")
